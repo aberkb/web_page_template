@@ -1,0 +1,488 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+	header {
+		width: 100%;
+		height: 80px;
+		color: #fff;
+		line-height: 80px;
+		display: block;
+	position: fixed;
+	background-image : url('img/u3j.jpg');
+	color: #9966ff;
+	top: 0;
+}
+a.himg  {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+
+
+	position: absolute;
+	left: 110px;
+	top: 11px;
+	float: left;
+}
+a.cont{
+
+	font-family: Hind Vadodara;
+	font-weight: 600;
+	font-size: 17px;
+	float: right;
+	text-decoration:none;
+	position: absolute;
+	top:0px;
+	right:185px;
+
+}
+a.cont:hover {
+	color:  #001a66;
+}
+header.sticky {
+	color: white;
+	background:rgba(255,255,255,0.9);
+	height: 80px;
+	line-height: 80px;
+}
+
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main {
+	width: 100%;
+
+}
+.mainimg {
+	padding-top: 200px;
+	text-align:center;
+	width: 100%;
+	height: 350px;
+	background-image: url('img/bl.jpg');
+}
+.mainimg h1 {
+	font-family: Fjalla One;
+	font-weight: 400;
+	font-size: 50px;
+	color: white;
+}
+.mainimg h2 {
+	padding-top: -100px;
+	font-family: Hind Vadodara;
+	font-weight: 600;
+	font-size: 30px;
+	color: white;
+	padding-bottom: 280px;
+}
+.mainimg a h4 {
+	font-family: Hind Vadodara;
+	font-weight: 600;
+	color: 	white;
+	font-size: 20px;
+	}
+ul li a {
+	font-family: Hind Vadodara;
+	font-weight: 600;
+	color: #e6e6e6;
+}
+
+.sidebar1 {
+	position: fixed;
+	top:0;
+	right: -270px;
+	background:#8cb3d9;
+	width: 270px;
+	height: 100%;
+	transition: .3s;
+		animation-duration: 1000ms;
+	animation-timing-function: ease-in-out;
+	animation-name: sidebar1;
+	animation-fill-mode: forwards;
+}
+.sidebar1.active {
+	right: 0;
+	animation-duration: 1000ms;
+	animation-timing-function: ease-in-out;
+	animation-name: sidebar1;
+	animation-fill-mode: forwards;
+
+}
+.sidebar1 .active ul li a {
+	margin-right: 100px;
+	animation-duration: 1600ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+}
+.sidebar1 .active ul li {
+		animation-duration: 1600ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	padding: 5px 10px;
+	list-style: none;
+}
+ul li a {
+	font-family: Assistant;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	transition: width 2s;
+	transition-timing-function: ease-in-out;
+}
+ul li a:hover {
+	padding: 10px 20px;
+	color: #f1f404;
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255,231,235,.2);
+}
+.sidebarBtn {
+	margin-right: -250px;
+	position: absolute;
+	top:11px;
+	left: -70px;
+	width: 40px;
+	height: 50px;
+	box-sizing: border-box;
+	cursor: pointer;
+	background:transparent;
+	border: none;
+	outline: none;
+}
+
+.sidebarBtn span {
+
+	display: block;
+	width: 35px;
+	height: 3px;
+	background:#262626;
+	position: absolute;
+	top:24px;
+	transition: .3s;
+}
+.sidebarBtn.toggleS span {
+	display: block;
+	width: 35px;
+	height: 3px;
+	background:#262626;
+	position: absolute;
+	top:24px;
+	transition: .3s;
+}
+.sidebarBtn span::before {
+	content: '';
+	position: absolute;
+	top:-10px;
+	right:  0;
+	width: 100%;
+	height: 3px;
+	background:#262626;
+
+
+	transition: .3s;
+}
+.sidebarBtn span::after {
+	content: '';
+	width: 100%;
+	height: 3px;
+	background:#262626;
+	position: absolute;
+	top:10px;
+	right: 0;
+	transition: .3s;
+}
+.sidebarBtn.toggle span {
+	position:absolute;
+	background: transparent;
+}
+.sidebarBtn.toggle span:before {
+
+	position: absolute;
+	margin-right: -250px;
+	top:0;
+	transform: rotate(45deg);
+
+}
+.sidebarBtn.toggle span:after {
+
+	margin-right: -250px;
+	position: absolute;
+	top:0;
+	transform: rotate(-45deg);
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+.s1 {
+	clear: both;
+	text-align: center;
+	padding: 70px;
+	color: black;
+	column-count: 4;
+	column-rule: 10px solid white;
+}
+.s1 h1 {
+	font-family: Hind Vadodara;
+	font-weight: 20px;
+	color: #000;
+}
+.s1 p{
+	font-family: Fjalla One;
+}
+.par1{
+	margin-top: -20px;
+}
+
+
+.refsec {
+	width: 100%;
+
+}
+.box1 {
+
+	width: 50%;
+	float: right;
+
+
+}
+      #map {
+        height: 740px;
+        width: 100%;
+       }
+}
+.box2 {
+	width: 50%;
+	float: left;
+
+
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+#feedback-page{
+	text-align:center;
+}
+
+#form-main{
+	width: 50%;
+	height: 600px;
+	padding-top:0px;
+}
+
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 721px;
+	height: 657px;
+	position: relative;
+
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #3498db;
+	color: #3498db;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	margin-top: 20px;
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+#company{
+	margin-top: 30px;
+	background-image: url(img/comp.png);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email{
+	margin-top: 30px;
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	margin-top: 30px;
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+
+.submit:hover {
+	color: #3498db;
+}
+
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+
+a {
+	font-family: Assistant;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+
+.footer-mai{clear: both; background-color:#292c2f;box-shadow:0 1px 1px 0 rgba(0,0,0,0.12);box-sizing:border-box;width:100%;text-align:left;font:bold 16px sans-serif;
+	padding:55px 50px;margin-top:0px}
+.footer-mai .footer-left,.footer-mai .footer-center,.footer-mai .footer-right{display:inline-block;vertical-align:top}
+.footer-mai .footer-left {position: relative;left: 150px;}
+.footer-mai .footer-left img{margin-top: -2px;}
+.footer-mai .footer-left a {position: relative;left: 15px;text-decoration: none;text-decoration-style: none;margin-top: -15px;}
+.footer-mai .footer-left{width:30%}
+.footer-mai h3{color:#fff;font:normal 36px Cookie,cursive;margin:0}
+.footer-mai h3 span{color:#5383d3}
+.footer-mai .footer-links{color:#fff;margin:20px 0 12px;padding:0}
+.footer-mai .footer-links a{display:inline-block;line-height:1.8;text-decoration:none;color:inherit}
+.footer-mai .footer-textcaner{color:#8f9296;font-size:14px;font-weight:400;margin-left: 15px;}
+.footer-mai .footer-center{width:32%}
+.footer-mai .footer-center {margin-left: 85px;}
+.footer-mai .footer-center i{background-color:#33383b;color:#fff;font-size:25px;width:38px;height:38px;border-radius:50%;text-align:center;
+	line-height:42px;margin:10px 15px;vertical-align:middle}
+.footer-mai .footer-center i.fa-envelope{font-size:17px;line-height:38px}
+.footer-mai .footer-center .mailinfo {margin-top: 0px;}
+.footer-mai .footer-center p{display:inline-block;color:#fff;vertical-align:middle;margin:0}
+.footer-mai .footer-center p span{display:block;font-weight:400;font-size:14px;line-height:2}
+.footer-mai .footer-center p a{color:#5383d3;text-decoration:none}
+.footer-mai .footer-right{width:30%}
+.footer-mai .footer-right {position: relative;right: 15px;}
+.footer-mai .footer-right .mau { margin-top: 9px; }
+.footer-mai .footer-mr{line-height:20px;color:#92999f;font-size:13px;font-weight:400;margin:0}
+.footer-mai .footer-mr span{display:block;color:#fff;font-size:14px;font-weight:700;margin-bottom:20px}
+.footer-mai .footer-icons{margin-top:25px}
+.footer-mai .footer-icons a{display:inline-block;width:35px;height:35px;cursor:pointer;background-color:#33383b;
+	border-radius:2px;font-size:20px;color:#fff;text-align:center;line-height:35px;margin-right:3px;margin-bottom:5px}
+@media (max-width: 880px) {
+.footer-mai{font:bold 14px sans-serif}
+.footer-mai .footer-left,.footer-mai .footer-center,.footer-mai .footer-right{display:block;width:100%;margin-bottom:40px;text-align:center}
+.footer-mai .footer-center i{margin-left:0}
+
+}
